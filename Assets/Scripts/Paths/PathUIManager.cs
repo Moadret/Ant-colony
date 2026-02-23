@@ -60,10 +60,8 @@ public class PathUIManager : MonoBehaviour
         GameObject go;
         try
         {
-            // Instantiate s parentem a worldPositionStays = false -> zachová lokální transformace vhodné pro UI
             go = Instantiate(entryPrefab, contentParent, false);
 
-            // Reset transform hodnot, aby layout group mohl správnì nastavovat pozici
             var rt = go.GetComponent<RectTransform>();
             if (rt != null)
             {

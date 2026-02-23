@@ -40,6 +40,6 @@ public class CameraSystem : MonoBehaviour
             movement += new Vector3(-panDelta.x, -panDelta.y, 0f) * dragSpeed;
         }
 
-        transform.position += movement * moveSpeed * Time.deltaTime;
+        transform.position += movement * moveSpeed * Time.unscaledDeltaTime;   //unaffected by slow time
     }
 }

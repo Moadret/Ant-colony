@@ -23,11 +23,9 @@ public class UpgradeDatabase : ScriptableObject
 
     public List<Upgrades> GetRandomUpgrades(int count)
     {
-        // Defensive copy so we don't modify the original list
         List<Upgrades> pool = new List<Upgrades>(upgrades);
         List<Upgrades> result = new List<Upgrades>();
 
-        // Clamp count to available upgrades
         count = Mathf.Min(count, pool.Count);
 
         Debug.Log($"Selecting {count} random upgrades from a pool of {pool.Count}");

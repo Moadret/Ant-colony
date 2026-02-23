@@ -38,16 +38,16 @@ public class EvolveSelectUI : MonoBehaviour
 
         int count = Mathf.Min(buttons.Length, currentOffers.Count);
 
-        // First, disable all buttons (important!)
+        // disable all buttons
         for (int i = 0; i < buttons.Length; i++)
         {
             buttons[i].gameObject.SetActive(false);
         }
 
-        // Then, configure only valid ones
+        // configure only valid
         for (int i = 0; i < count; i++)
         {
-            int index = i; // closure safety
+            int index = i;
 
             buttons[i].gameObject.SetActive(true);
             buttons[i].onClick.RemoveAllListeners();

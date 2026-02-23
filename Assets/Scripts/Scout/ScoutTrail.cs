@@ -10,11 +10,14 @@ public class ScoutTrail : MonoBehaviour
     public LineRenderer lineRenderer;
     public float recordDistance = 0.1f;
     public float rewindSpeed = 5f;
+    public DrawManager drawManager;
+
 
     private scout_movement movement;
     private List<Vector2> positions = new List<Vector2>();
     private bool rewinding = false;
     private int rewindIndex;
+    
     public Vector2 startPosition { get; private set; }
 
     private void Awake()
@@ -29,6 +32,7 @@ public class ScoutTrail : MonoBehaviour
         //for now press R to rewind
         if (Keyboard.current.rKey.wasPressedThisFrame && !movement.moving && positions.Count > 1)
         {
+            drawManager.ClearAllLines();
             rewinding = true;
             rewindIndex = positions.Count - 1;
         }
