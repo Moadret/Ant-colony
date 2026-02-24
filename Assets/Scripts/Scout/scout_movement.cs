@@ -11,6 +11,7 @@ public class scout_movement : MonoBehaviour
     public Animator anim;
     public int facingDirection = 1;
     public bool moving;
+    public Vector2 spawnPoint;
 
     public ResourceManager resourceManager;
 
@@ -24,6 +25,7 @@ public class scout_movement : MonoBehaviour
     {
 //        rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
+        spawnPoint = rb.position;
     }
 
     void Update()

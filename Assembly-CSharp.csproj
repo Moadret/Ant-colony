@@ -66,9 +66,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\Scripts\Drawing\DrawManager.cs" />
+    <Compile Include="Assets\Scripts\EnemyAnt\EnemyAntMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\DangerTile.cs" />
     <Compile Include="Assets\Scripts\ResourceSourceClickable.cs" />
+    <Compile Include="Assets\Scripts\Scout\ScoutCombat.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
@@ -106,6 +108,7 @@
     <Compile Include="Assets\Scripts\ResourceInfoUI.cs" />
     <Compile Include="Assets\Scripts\Paths\PathUIManager.cs" />
     <Compile Include="Assets\Scripts\Scout\scout_input.cs" />
+    <Compile Include="Assets\Scripts\EnemyAnt\EnemyAntCombat.cs" />
     <Compile Include="Assets\Scripts\ResourceManager.cs" />
     <Compile Include="Assets\Scripts\TimeController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
